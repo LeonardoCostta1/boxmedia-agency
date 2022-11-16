@@ -1,0 +1,108 @@
+.services_wrapper {
+  height: auto;
+  min-height: 90vh;
+  width: 100%;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1px;
+  background: #F8F8F8;
+  color: #000;
+  position: relative;
+}
+
+.services_wrapper .title_default {
+  font-size: 8rem;
+  letter-spacing: -10px;
+  line-height: 8rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.services_wrapper .title_services_top {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1;
+  max-width: 50%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.services_wrapper .sub_title_services {
+  margin-bottom: 80px;
+  font-size: 20px;
+  opacity: 0.7;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.services_wrapper .services_container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services_wrapper .services_container .box_services {
+  height: auto;
+  min-height: 200px;
+  width: 370px;
+  padding: calc(90rem / 24);
+  text-align: left;
+  margin-left: 30PX;
+  margin-bottom: 30PX;
+  border: 0.05208vw solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.services_wrapper .services_container .box_services .number {
+  font-size: 13rem;
+  font-family: "ultra";
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  left: -10px;
+  color: #000;
+}
+
+.services_wrapper .services_container .box_services .title_services {
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 90px;
+}
+
+.services_wrapper .services_container .box_services:hover .number {
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */

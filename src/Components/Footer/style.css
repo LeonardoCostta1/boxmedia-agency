@@ -1,0 +1,89 @@
+.footer_wrapper {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+  height: 40vh;
+}
+
+.footer_wrapper .footer_container {
+  width: 80%;
+  border-top: 0.05208vw solid rgba(0, 0, 0, 0.2);
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 14px;
+}
+
+.footer_wrapper .footer_container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  white-space: nowrap;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.footer_wrapper .footer_container .box .title_category_footer {
+  font-weight: bold;
+}
+
+.footer_wrapper .footer_container .box .item_footer {
+  line-height: 20px;
+}
+
+.footer_wrapper .footer_container .box .rights_reserved {
+  font-size: 10px;
+}
+
+.footer_wrapper .footer_container .box .logo_sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35px;
+  position: relative;
+}
+
+.footer_wrapper .footer_container .box .logo_sub .box_logo {
+  background: #fff;
+}
+
+.footer_wrapper .footer_container .box .logo_sub .name_logo {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

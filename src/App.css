@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.App {
+  text-align: center;
+  background: #F8F8F8;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+button {
+  height: 50px;
+  background: #14181B;
+  border: none;
+  padding: 15px 70px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+@font-face {
+  font-family: "itc-avant-garde-gothic-bold";
+  src: url(./Assets/fonts/itc-avant-garde-gothic-bold.otf);
+}
+
+@font-face {
+  font-family: "itc-avant-garde-gothic-medium";
+  src: url(./Assets/fonts/itc-avant-garde-gothic-medium.otf);
+}
+
+@font-face {
+  font-family: "avantgardef-book";
+  src: url(./Assets/fonts/avantgardef-book.otf);
+}
+
+@font-face {
+  font-family: "windstone";
+  src: url(./Assets/fonts/windstone.otf);
+}
+
+@font-face {
+  font-family: "ultra";
+  src: url(./Assets/fonts/ultra.ttf);
+}
+
+.box_logo {
+  height: 17px;
+  width: 17px;
+  background: #000;
+  margin-right: 10px;
+  -webkit-box-shadow: 0px 10px -14px 14px #fff;
+          box-shadow: 0px 10px -14px 14px #fff;
+}
+
+.name_logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  letter-spacing: -2px;
+  color: #000;
+}
+
+.name_logo::after {
+  content: "®";
+  font-weight: 300;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #fff;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.title_default_container {
+  width: 50%;
+}
+
+.title_default_container .title_default {
+  font-size: 8rem;
+  line-height: 3.3rem;
+  font-weight: 700;
+}
+
+.title_default_container .sub_title_default {
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  margin-top: 1.5rem;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=App.css.map */

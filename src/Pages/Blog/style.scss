@@ -1,0 +1,111 @@
+.blog_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  padding-top: 150px;
+  .blog_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    min-height: 75vh;
+    height: auto;
+    text-align: left;
+    .articles_container {
+      min-height: 300px;
+      width: 350px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      margin: 0 10px;
+      margin-bottom: 30px;
+
+      .image_article {
+        background: #ddd;
+        width: 100%;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .description_container {
+        padding: 1.5rem 2.5rem;
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+        .resume{
+          font-size: 12px;
+        }
+        .info_article_bottom {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: row;
+          font-size: 12px;
+          .date_of_creation {
+            margin-right: 20px;
+            display: none;
+          }
+          .category {
+            background: #ddd;
+            padding: 2px 8px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .paginate_numbers {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      border: 1px solid #333;
+      opacity: 0.4;
+    }
+
+    .paginate {
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .active_page {
+      opacity: 1;
+    }
+    .last_page {
+      opacity: 0.4;
+      cursor: no-drop;
+    }
+  }
+  .pages {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+    margin: 10px 0 50px 0;
+    opacity: 0.6;
+  }
+}

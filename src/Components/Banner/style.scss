@@ -1,0 +1,177 @@
+@import "../../variables/variables";
+.banner_wrapper {
+  height: $bannerHeight;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .banner_container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2000;
+    .left {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .title_container {
+        width: 100%;
+        text-align: left;
+        .title {
+          font-size: $fontTitleSize;
+          line-height: $lineHeight;
+          margin-bottom: 30px;
+          font-weight: 600;
+          letter-spacing: $letterSpacing;
+        }
+        .description {
+          width: 50%;
+        }
+
+        .button_cotainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: $borderRadius;
+          margin-top: 30px;
+          width: 520px;
+          button {
+            margin: 0;
+            &:first-child {
+              margin-right: 5px;
+            }
+            &:last-child {
+              background: none;
+              border: 1px solid $borderColor;
+              color: $textColor;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .boxes_wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .box{
+          width: 50%;
+          .number{
+        font-weight: 600;
+            font-size: 3rem;
+          }
+          .text{
+    
+          }
+        }
+      }
+
+
+
+    
+  }
+  }
+
+  .overlay {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0) 10%,
+        rgba(0, 0, 0, 0.377),
+        #000 100%
+      ),
+      url(../../Assets/img/malha2.png);
+    position: absolute;
+    z-index: 20;
+    height: $bannerHeight;
+    width: 100%;
+    display: none;
+  }
+  .video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    transition: 1s opacity;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 10;
+  }
+}
+
+@keyframes toSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

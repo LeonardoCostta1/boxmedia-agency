@@ -1,0 +1,181 @@
+@import "../../variables/variables";
+.contact_wrapper {
+  height: 100vh;
+  width: 100%;
+  .contact_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .left {
+      height: 100%;
+      width: 25%;
+      background: $bg;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 0px 50px 30px;
+      .logo_contatct_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #fff;
+        width: 100%;
+        height: 100px;
+        cursor: pointer;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      .testimonial_container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+
+        .stars {
+          background: url(../../Assets/img/5stars.svg) no-repeat;
+          height: 30px;
+          width: 100px;
+        }
+        .text {
+          color: #fff;
+          font-weight: 600;
+          font-size: 20px;
+        }
+        .author {
+          margin-top: 20px;
+        }
+      }
+      
+
+      .clients_wrapper {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .title_clientes {
+          display: none;
+        }
+        .clients_container {
+          width: 100%;
+        }
+      }
+    }
+    .right {
+      background: #fff;
+      height: 100%;
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .title_default_container{
+        color: #000;
+        width: 100%;
+      }
+      .right_container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .top_navigation {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 80px;
+          .boxes_nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 30px;
+            height: 60px;
+            border: 1px solid #000;
+            width: 150px;
+            font-weight: 700;
+            text-transform: capitalize;
+            cursor: pointer;
+            &:first-child {
+              margin-left: 0px;
+            }
+            &:last-child {
+              margin-right: 0px;
+            }
+          }
+        }
+        .form_container {
+          height: 100%;
+          width: 100%;
+          // margin-top: 30px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          .img_timeline {
+            height: 350px;
+            width: 300px;
+            background: url(../../Assets/img/timeline-product@1x.png) no-repeat;
+          }
+          form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            input{
+              height: 50px;
+              margin-bottom: 10px;
+              width: 400px;
+              border-radius: 50px;
+              border: 1px solid #999;
+              padding: 0 20px;
+              font-family: 'Poppins', sans-serif;
+            }
+            textarea{
+              width: 400px;
+              height: 100px;
+              border: 1px solid #999;
+              margin-bottom: 10px;
+              border-radius: 20px;
+              padding:20px;
+              font-family: 'Poppins', sans-serif;
+            }
+            input[type="submit"] {
+              background-color: $bg;
+              color: #fff;
+              text-transform: uppercase;
+              font-weight: bold;
+              font-family: 'Poppins', sans-serif;
+
+            }
+            select{
+              height: 50px;
+              margin-bottom: 10px;
+              width: 400px;
+              border-radius: 50px;
+              border: 1px solid #999;
+              padding: 0 20px;
+              font-family: 'Poppins', sans-serif;
+            }
+          }
+        }
+        .active{
+
+          background: $bg;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+

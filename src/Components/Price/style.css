@@ -1,0 +1,233 @@
+.pri_wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 130px 0 100px;
+}
+
+.pri_wrapper .title_price_page {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: capitalize;
+  text-align: center;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.pri_wrapper .sub_title_price {
+  width: 75%;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.7;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+.pri_wrapper .sub_title_price span {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pri_wrapper .pri_container {
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pri_wrapper .pri_container .left {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  display: none;
+}
+
+.pri_wrapper .pri_container .left .featured {
+  margin-bottom: 30px;
+}
+
+.pri_wrapper .pri_container .left .services {
+  width: 70%;
+  margin-bottom: 30px;
+  padding: 0 0 32px 0;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 0.05208vw solid rgba(0, 0, 0, 0.2);
+}
+
+.pri_wrapper .pri_container .left .services .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5625vw;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.pri_wrapper .pri_container .left .services .title i {
+  font-size: 18px;
+  display: none;
+}
+
+.pri_wrapper .pri_container .left .services .description {
+  line-height: 20px;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.pri_wrapper .pri_container .left .services .line {
+  height: 2px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.137);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pri_wrapper .pri_container .left .actived {
+  border: 0.05208vw solid rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin-bottom: 30px;
+  padding: 0 0 32px 0;
+  padding: 20px;
+}
+
+.pri_wrapper .pri_container .left .actived .line {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #000;
+}
+
+.pri_wrapper .pri_container .right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pri_wrapper .pri_container .right .pricing-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing {
+  width: 33%;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .top_pricing {
+  height: 180px;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .top_pricing .title {
+  font-size: 1.5625vw;
+  line-height: 1.5625vw;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .top_pricing .type {
+  font-size: 0.8333333333vw;
+  line-height: 0.8333333333vw;
+  text-align: left;
+  margin: 0.5208333333vw 0 0;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .top_pricing .price {
+  font-size: 3vw;
+  line-height: 4.1666666667vw;
+  text-align: left;
+  margin: 2.0833333333vw 0 0;
+  letter-spacing: -4px;
+  font-weight: 600;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .top_pricing .price span {
+  font-size: 0.8333333333vw;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .feature-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .feature-list li {
+  height: 50px;
+  margin-bottom: 1.0416666667vw;
+  padding-bottom: 1.0416666667vw;
+  padding-left: 0.5208333333vw;
+  padding-right: 0.5208333333vw;
+  border-bottom: 0.05208vw solid rgba(0, 0, 0, 0.2);
+  font-size: .7vw;
+}
+
+.pri_wrapper .pri_container .right .pricing-details .single-pricing .feature-list li:hover {
+  border-bottom: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

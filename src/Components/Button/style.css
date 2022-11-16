@@ -1,0 +1,15 @@
+.button_default {
+  height: 50px;
+  background: #14181B;
+  border: none;
+  padding: 15px 70px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-top: 60px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+/*# sourceMappingURL=style.css.map */

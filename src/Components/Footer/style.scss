@@ -1,0 +1,59 @@
+@import "../../variables/variables";
+.footer_wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+  height: 40vh;
+  .footer_container {
+    width: 80%;
+    border-top: 0.05208vw solid rgba(0, 0, 0, 0.2);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    .box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      text-transform: uppercase;
+      width: 25%;
+      .title_category_footer{
+
+        font-weight: bold;
+
+      }
+
+      .item_footer{
+        line-height: 20px;
+
+      }
+      .rights_reserved{
+        font-size: 10px;
+      }
+      .logo_sub {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        position: relative;
+  
+        .box_logo{
+          background: #fff;
+          
+        }
+       .name_logo{
+        color: #fff;
+        }
+      }
+    }
+  }
+}

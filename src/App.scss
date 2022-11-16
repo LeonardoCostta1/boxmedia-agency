@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "./variables/_variables.scss";
+.App {
+  text-align: center;
+  background: $bg;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: $textColor;
+}
+
+button {
+  height: 50px;
+  background:$bgc;
+  border: none;
+  padding: 15px 70px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+@font-face {
+  font-family: "itc-avant-garde-gothic-bold";
+  src: url(./Assets/fonts/itc-avant-garde-gothic-bold.otf);
+}
+@font-face {
+  font-family: "itc-avant-garde-gothic-medium";
+  src: url(./Assets/fonts/itc-avant-garde-gothic-medium.otf);
+}
+
+@font-face {
+  font-family: "avantgardef-book";
+  src: url(./Assets/fonts/avantgardef-book.otf);
+}
+
+@font-face {
+  font-family: "windstone";
+  src: url(./Assets/fonts/windstone.otf);
+}
+@font-face {
+  font-family: "ultra";
+  src: url(./Assets/fonts/ultra.ttf);
+}
+
+.box_logo {
+  height: 17px;
+  width: 17px;
+  background: $textColor;
+  margin-right: 10px;
+  box-shadow: 0px 10px -14px 14px #fff;
+}
+
+.name_logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  letter-spacing: -2px;
+  color: $textColor;
+  &::after {
+    content: "®";
+    font-weight: 300;
+  }
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  text-decoration: none;
+  color: $textColor;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.title_default_container {
+  width: 50%;
+  .title_default {
+    font-size: $fontTitleSize;
+    line-height: 3.3rem;
+    font-weight: 700;
+  }
+  .sub_title_default {
+    font-size: 1.125rem;
+    line-height: 1.575rem;
+    margin-top: 1.5rem;
+    margin-bottom: 50px;
+  }
+}

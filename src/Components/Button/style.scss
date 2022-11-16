@@ -1,0 +1,14 @@
+@import "../../variables/variables";
+.button_default{
+    height: 50px;
+    background:$bgc;
+    border: none;
+    padding: 15px 70px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 60px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
