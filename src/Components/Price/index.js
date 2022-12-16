@@ -14,19 +14,6 @@ function Price() {
   return (
     <div className="pri_wrapper" id="price">
       <div className="pri_container">
-        <div className="left">
-          <div className="services actived">
-            <div className="title">
-              startup <i class="fa-solid fa-circle-chevron-right"></i>
-            </div>
-            <div className="description">
-              Unique, personalized
-              <br />
-              <strong>website design and development</strong>
-            </div>
-            <div className="line"></div>
-          </div>
-        </div>
         <div className="right">
           <div class="pricing-details">
             <div class="single-pricing">

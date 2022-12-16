@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  color: $textColor;
+  color: $bgc;
 }
 
 button {
@@ -52,9 +52,9 @@ button {
 .box_logo {
   height: 17px;
   width: 17px;
-  background: $textColor;
+  background: $bgc;
   margin-right: 10px;
-  box-shadow: 0px 10px -14px 14px #fff;
+  box-shadow: 0px 10px -14px 14px $bg;
 }
 
 .name_logo {
@@ -63,7 +63,7 @@ button {
   font-size: 1.5rem;
   margin-right: 30px;
   letter-spacing: -2px;
-  color: $textColor;
+  color: $bgc;
   &::after {
     content: "®";
     font-weight: 300;
@@ -74,9 +74,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #fff;
+  color: $bg;
   text-decoration: none;
-  color: $textColor;
+  color: $bgc;
   &:hover {
     opacity: .7;
   }

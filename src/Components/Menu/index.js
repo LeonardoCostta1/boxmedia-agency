@@ -5,7 +5,6 @@ import Moment from "react-moment";
 import "moment-timezone";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useNavigate } from "react-router-dom";
-import Button from "../Button";
 function Menu() {
   const navigate = useNavigate();
 
@@ -41,24 +40,7 @@ function Menu() {
         </AnchorLink>
         <div className="menu_drag">
           <div className="navigation_menu">
-            <AnchorLink href="#clients">
-              <div>clients</div>
-            </AnchorLink>
-            <AnchorLink href="#services">
-              <div>Services</div>
-            </AnchorLink>
-            <AnchorLink href="#price">
-              {" "}
-              <div>Prices</div>
-            </AnchorLink>
-            <AnchorLink href="#works">
-              <div>Works</div>
-            </AnchorLink>
-            <AnchorLink href="#about">
-              <div>About</div>
-            </AnchorLink>
             <div onClick={() => navigateTo("blog")}>blog</div>
-            <Button title="Contact" onClick={() => navigateTo("contact")} />
           </div>
           <div className="drag_box_container">
             <div className="name_menu">menu</div>

@@ -4,75 +4,43 @@
   position: fixed;
   top: 0;
   z-index: 8000;
-  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
   background: #F8F8F8;
 }
-
 .menu_wrapper .menu_container {
   width: calc(100% - 100px);
   height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
-
 .menu_wrapper .menu_container .logo_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   text-transform: uppercase;
   font-size: 10px;
 }
-
 .menu_wrapper .menu_container .logo_container .logo_image {
   width: 150px;
   margin-right: 30px;
 }
-
 .menu_wrapper .menu_container .logo_container .dia {
   margin-right: 10px;
   letter-spacing: 2px;
 }
-
 .menu_wrapper .menu_container .menu_drag {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 .menu_wrapper .menu_container .menu_drag .navigation_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .menu_wrapper .menu_container .menu_drag .navigation_menu div {
   margin-left: 40px;
   text-transform: uppercase;
@@ -80,75 +48,49 @@
   font-size: 11px;
   cursor: pointer;
 }
-
 .menu_wrapper .menu_container .menu_drag .navigation_menu div:hover {
   color: #000;
 }
-
 .menu_wrapper .menu_container .menu_drag .navigation_menu .contact_button {
   height: 40px;
   background: #000;
   color: #fff;
   border-radius: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 0px 30px;
   text-transform: capitalize;
 }
-
 .menu_wrapper .menu_container .menu_drag button {
   margin: 0;
   padding: 0 30px;
   height: 35px;
   margin-left: 20px;
 }
-
 .menu_wrapper .menu_container .menu_drag .drag_box_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50px;
   height: 40px;
+  margin-left: 20px;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
 }
-
 .menu_wrapper .menu_container .menu_drag .drag_box_container .name_menu {
   text-transform: uppercase;
   font-size: 12px;
-  display: none;
 }
-
 .menu_wrapper .menu_container .menu_drag .drag_box_container .drag_box {
   width: 30px;
   height: 11px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
-
 .menu_wrapper .menu_container .menu_drag .drag_box_container .drag_box div {
   width: 50%;
   height: 1px;
@@ -158,4 +100,26 @@
 .active {
   height: 70px;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .menu_wrapper .menu_container {
+    width: 90%;
+  }
+  .menu_wrapper .menu_container .menu_drag .navigation_menu {
+    display: none;
+  }
+  .menu_wrapper .menu_container .menu_drag button {
+    margin: 0;
+    padding: 0 30px;
+    height: 35px;
+    margin-left: 20px;
+  }
+  .menu_wrapper .menu_container .menu_drag .drag_box_container {
+    padding: 0 0;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  }
+  .menu_wrapper .menu_container .menu_drag .drag_box_container .name_menu {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

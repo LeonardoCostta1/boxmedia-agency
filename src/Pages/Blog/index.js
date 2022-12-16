@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useGetAllArticlesQuery } from "../../redux/services/blog";
+import MDEditor from "@uiw/react-md-editor";
 import Loading from "../../Components/Loading";
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -41,7 +42,12 @@ function Blog() {
                     <div className="title">{article.title}</div>
 
                     <div className="resume">
-                      {article?.text?.substring(0, 50)}...
+                      <MDEditor.Markdown
+                        className="article_text"
+                        source={article?.text?.substring(0, 100)}
+                        style={{ whiteSpace: "pre-wrap" }}
+                      />
+                      ...
                     </div>
 
                     <div className="info_article_bottom">

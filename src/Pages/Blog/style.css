@@ -1,45 +1,24 @@
 .blog_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
   height: auto;
   padding-top: 150px;
 }
-
 .blog_wrapper .blog_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 80%;
   min-height: 75vh;
   height: auto;
   text-align: left;
 }
-
 .blog_wrapper .blog_container .articles_container {
   min-height: 300px;
   width: 350px;
@@ -48,122 +27,83 @@
   margin: 0 10px;
   margin-bottom: 30px;
 }
-
 .blog_wrapper .blog_container .articles_container .image_article {
   background: #ddd;
   width: 100%;
   height: 150px;
   border-radius: 20px 20px 0 0;
 }
-
 .blog_wrapper .blog_container .articles_container .description_container {
   padding: 1.5rem 2.5rem;
 }
-
 .blog_wrapper .blog_container .articles_container .description_container .title {
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
   margin-bottom: 20px;
 }
-
 .blog_wrapper .blog_container .articles_container .description_container .resume {
   font-size: 12px;
 }
-
+.blog_wrapper .blog_container .articles_container .description_container .resume .article_text {
+  font-size: 10px;
+}
 .blog_wrapper .blog_container .articles_container .description_container .info_article_bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
   font-size: 12px;
 }
-
 .blog_wrapper .blog_container .articles_container .description_container .info_article_bottom .date_of_creation {
   margin-right: 20px;
   display: none;
 }
-
 .blog_wrapper .blog_container .articles_container .description_container .info_article_bottom .category {
   background: #ddd;
   padding: 2px 8px;
   border-radius: 4px;
 }
-
 .blog_wrapper .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .blog_wrapper .pagination button {
   height: 40px;
   width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 40px;
   padding: 0;
   margin: 0;
 }
-
 .blog_wrapper .pagination .paginate_numbers {
   height: 40px;
   width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 40px;
   border: 1px solid #333;
   opacity: 0.4;
 }
-
 .blog_wrapper .pagination .paginate {
   margin: 0 5px;
   cursor: pointer;
 }
-
 .blog_wrapper .pagination .active_page {
   opacity: 1;
 }
-
 .blog_wrapper .pagination .last_page {
   opacity: 0.4;
   cursor: no-drop;
 }
-
 .blog_wrapper .pages {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 10px;
   margin: 10px 0 50px 0;
   opacity: 0.6;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

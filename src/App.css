@@ -5,21 +5,12 @@
   text-align: center;
   background: #F8F8F8;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
-  color: #000;
+  color: #14181B;
 }
 
 button {
@@ -32,7 +23,6 @@ button {
   text-transform: capitalize;
   white-space: nowrap;
   cursor: pointer;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -40,34 +30,28 @@ button {
   font-family: "itc-avant-garde-gothic-bold";
   src: url(./Assets/fonts/itc-avant-garde-gothic-bold.otf);
 }
-
 @font-face {
   font-family: "itc-avant-garde-gothic-medium";
   src: url(./Assets/fonts/itc-avant-garde-gothic-medium.otf);
 }
-
 @font-face {
   font-family: "avantgardef-book";
   src: url(./Assets/fonts/avantgardef-book.otf);
 }
-
 @font-face {
   font-family: "windstone";
   src: url(./Assets/fonts/windstone.otf);
 }
-
 @font-face {
   font-family: "ultra";
   src: url(./Assets/fonts/ultra.ttf);
 }
-
 .box_logo {
   height: 17px;
   width: 17px;
-  background: #000;
+  background: #14181B;
   margin-right: 10px;
-  -webkit-box-shadow: 0px 10px -14px 14px #fff;
-          box-shadow: 0px 10px -14px 14px #fff;
+  box-shadow: 0px 10px -14px 14px #F8F8F8;
 }
 
 .name_logo {
@@ -76,47 +60,36 @@ button {
   font-size: 1.5rem;
   margin-right: 30px;
   letter-spacing: -2px;
-  color: #000;
+  color: #14181B;
 }
-
 .name_logo::after {
   content: "®";
   font-weight: 300;
 }
 
 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  color: #fff;
+  align-items: center;
+  justify-content: flex-start;
+  color: #F8F8F8;
   text-decoration: none;
-  color: #000;
+  color: #14181B;
 }
-
 a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .title_default_container {
   width: 50%;
 }
-
 .title_default_container .title_default {
-  font-size: 8rem;
+  font-size: 6vw;
   line-height: 3.3rem;
   font-weight: 700;
 }
-
 .title_default_container .sub_title_default {
   font-size: 1.125rem;
   line-height: 1.575rem;
   margin-top: 1.5rem;
   margin-bottom: 50px;
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

@@ -35,14 +35,23 @@ function Articles() {
 
   if (!data) return <Loading />;
 
-  const moreComments = () => {
-    if (commentSliced?.length === data?.comments.length) {
-      return;
-    }
+  const moreComments = () => {if (commentSliced?.length === data?.comments.length) {return;}
     setShowComments(showComments + 2);
   };
 
   const commentSliced = data?.comments.slice(0, showComments);
+
+
+  async function share() {
+    try {
+      await navigator.share({
+        text: data?.title,
+        url: `http://localhost:3000/articles/${id}`
+      })
+    } catch (error) {
+      console.log('Sharing failed!', error)
+    }
+  }
 
   return (
     <>
@@ -55,11 +64,17 @@ function Articles() {
           <div className="article_content">
             <div className="social_wrapper">
               <div className="social_container">
+
                 <div className="box_social_media">
                   <i className="fa-brands fa-linkedin-in"></i>
                 </div>
+
                 <div className="box_social_media">
                   <i className="fa-brands fa-github"></i>
+                </div>
+
+                <div className="box_social_media" onClick={()=>share()}>
+                  <i className="fa-solid fa-share-nodes"></i>
                 </div>
               </div>
             </div>

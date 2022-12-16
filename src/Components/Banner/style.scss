@@ -6,6 +6,26 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  .scroll_tag {
+    position: absolute;
+    bottom: 80px;
+    left: -50px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    height: 50px;
+    width: 220px;
+    z-index: 200;
+    span {
+      height: 0.0520833333vh;
+      width: 150px;
+      background: $bgc;
+      display: block;
+      margin-left: 10px;
+    }
+  }
   .banner_container {
     width: 80%;
     height: 100%;
@@ -21,7 +41,6 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
       .title_container {
         width: 100%;
         text-align: left;
@@ -31,11 +50,13 @@
           margin-bottom: 30px;
           font-weight: 600;
           letter-spacing: $letterSpacing;
+          span {
+            font-weight: 400;
+          }
         }
         .description {
-          width: 50%;
+          width: 70%;
         }
-
         .button_cotainer {
           display: flex;
           align-items: center;
@@ -43,6 +64,7 @@
           border-radius: $borderRadius;
           margin-top: 30px;
           width: 520px;
+          display: none;
           button {
             margin: 0;
             &:first-child {
@@ -51,7 +73,7 @@
             &:last-child {
               background: none;
               border: 1px solid $borderColor;
-              color: $textColor;
+              color: $bgc;
             }
           }
         }
@@ -63,115 +85,75 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      .boxes_wrapper{
+      .boxes_wrapper {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        .box{
+        .box {
           width: 50%;
-          .number{
-        font-weight: 600;
+          .number {
+            font-weight: 600;
             font-size: 3rem;
           }
-          .text{
-    
+          .text {
           }
         }
       }
-
-
-
-    
-  }
-  }
-
-  .overlay {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0) 10%,
-        rgba(0, 0, 0, 0.377),
-        #000 100%
-      ),
-      url(../../Assets/img/malha2.png);
-    position: absolute;
-    z-index: 20;
-    height: $bannerHeight;
-    width: 100%;
-    display: none;
-  }
-  .video {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background-size: contain;
-    transition: 1s opacity;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    z-index: 10;
+    }
   }
 }
 
-@keyframes toSlide {
-  0% {
-    transform: translateX(0);
+@media (min-width: 0px) and (max-width: 600px) {
+  .banner_wrapper {
+    min-height: 80vh;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    .scroll_tag {
+      display: none;
+    }
+    .banner_container {
+      width: 90%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .left {
+        width: 100%;
+        height: auto;
+        min-height: 40%;
+        flex-direction: column;
+        margin-bottom: 50px;
+        .title_container {
+          width: 100%;
+          text-align: left;
+          .title {
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 30px;
+            letter-spacing: normal;
+          }
+          .description {
+            width: 100%;
+          }
+        }
+      }
+      .right {
+        width: 100%;
+        height: 30%;
+        .boxes_wrapper {
+          flex-wrap: wrap;
+          text-align: center;
+          .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #00000010;
+          }
+        }
+      }
+    }
   }
-
-  100% {
-    transform: translateX(100px);
-  }
-}
-@keyframes scale {
-  0% {
-    transform: scale(0.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes myAnim {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60% {
-    transform: translateX(10px);
-  }
-
-  80% {
-    transform: translateX(8px);
-  }
-
-  90% {
-    transform: translateX(-8px);
-  }
-}
-
-@keyframes rotate {
-	0% {
-		transform: rotate(0);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
 }

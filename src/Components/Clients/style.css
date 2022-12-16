@@ -2,20 +2,13 @@
   width: 100%;
   min-height: 70vh;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #000;
   position: relative;
   overflow: hidden;
 }
-
 .clients_wrapper iframe {
   width: 100%;
   height: 100%;
@@ -27,4 +20,15 @@
   height: 110vh;
   width: 200.66667vh;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .clients_wrapper {
+    min-height: 200px;
+  }
+  .clients_wrapper iframe {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

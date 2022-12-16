@@ -73,10 +73,13 @@
         justify-content: center;
         border-radius: 50px;
         height: 40px;
+        margin-left: 20px;
+        padding: 0 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
         .name_menu {
           text-transform: uppercase;
           font-size: 12px;
-          display: none;
         }
         .drag_box {
           width: 30px;
@@ -85,7 +88,6 @@
           align-items: center;
           justify-content: space-between;
           flex-direction: column;
-          display: none;
           div {
             width: 50%;
             height: 1px;
@@ -99,4 +101,33 @@
 
 .active {
   height: 70px;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+  .menu_wrapper {
+    .menu_container {
+      width: calc(100% - 10%);
+      .menu_drag {
+        .navigation_menu {
+          display: none;
+        }
+        button {
+          margin: 0;
+          padding: 0 30px;
+          height: 35px;
+          margin-left: 20px;
+        }
+        .drag_box_container {
+          padding: 0 0;
+          background: rgba(255, 255, 255, 0);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+          .name_menu {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

@@ -29,7 +29,7 @@ function Sobre() {
     <div className="sobre_wrapper" id="about">
       <div className="sobre_container">
         <div className="right">
-          <div className="title_services_top">
+          {/* <div className="title_services_top">
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
               <div className="container_left">
                 <Reveal>
@@ -55,11 +55,11 @@ function Sobre() {
               </div>
             </ScrollAnimation>
             Bespoke web design
-          </div>
+          </div> */}
           <div className="title_container">
             <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={100}>
               <div className="text">
-                No templates.
+                <span>No templates.</span>
                 <br />
                 Like, ever
               </div>

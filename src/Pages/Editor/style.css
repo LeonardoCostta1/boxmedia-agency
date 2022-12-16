@@ -1,64 +1,38 @@
 .editor_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
   min-height: 100vh;
   width: 100%;
   height: auto;
 }
-
 .editor_wrapper .editor_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 80%;
   min-height: 100vh;
   height: auto;
   text-align: left;
   padding: 130px 0 50px 0;
 }
-
 .editor_wrapper .editor_container input {
   height: 50px;
   width: 100%;
   margin-bottom: 20px;
   padding: 0 0 0 30px;
 }
-
-.editor_wrapper .editor_container input::-webkit-input-placeholder {
+.editor_wrapper .editor_container input::-moz-placeholder {
   text-transform: capitalize;
 }
-
 .editor_wrapper .editor_container input:-ms-input-placeholder {
   text-transform: capitalize;
 }
-
-.editor_wrapper .editor_container input::-ms-input-placeholder {
-  text-transform: capitalize;
-}
-
 .editor_wrapper .editor_container input::placeholder {
   text-transform: capitalize;
 }
-
 .editor_wrapper .editor_container .w-md-editor {
   height: 50vh !important;
   width: 100%;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

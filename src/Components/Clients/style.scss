@@ -22,3 +22,16 @@
     width: 200.66667vh;
   }
 }
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .clients_wrapper {
+    min-height: 200px;
+    iframe {
+      top: 0;
+      left:0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+   
+}
